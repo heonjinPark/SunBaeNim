@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_host"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="음식점 위치"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="트라팰리스 - 연합 타운 - 학교 인근"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tab1_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1,2"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+            <!--1행-->
+            <TableRow
+                android:id="@+id/tab1_main_row1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/tab1_main_button1"
+                    android:layout_width="30dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/img_btn_bg"
+                    android:src="@drawable/korea_food"
+                    android:scaleType="centerInside"
+                    android:padding="20dp"/>
+                <ImageButton
+                    android:id="@+id/tab1_main_button2"
+                    android:layout_width="30dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/img_btn_bg"
+                    android:src="@drawable/flour_based_food"
+                    android:scaleType="centerInside"
+                    android:padding="20dp"/>
+                <ImageButton
+                    android:id="@+id/tab1_main_button3"
+                    android:layout_width="30dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/img_btn_bg"
+                    android:src="@drawable/chicken"
+                    android:scaleType="centerInside"
+                    android:padding="20dp"/>
+            </TableRow>
+
+            <!--2행-->
+            <TableRow
+                android:id="@+id/tab1_main_row2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/tab1_main_button4"
+                    android:layout_width="30dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/img_btn_bg"
+                    android:src="@drawable/chinese_food"
+                    android:scaleType="centerInside"
+                    android:padding="20dp"/>
+                <ImageButton
+                    android:id="@+id/tab1_main_button5"
+                    android:layout_width="30dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/img_btn_bg"
+                    android:src="@drawable/pizza"
+                    android:scaleType="centerInside"
+                    android:padding="20dp"/>
+                <ImageButton
+                    android:id="@+id/tab1_main_button6"
+                    android:layout_width="30dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/img_btn_bg"
+                    android:src="@drawable/meat"
+                    android:scaleType="centerInside"
+                    android:padding="20dp" />
+            </TableRow>
+
+            <!--3행-->
+            <TableRow
+                android:id="@+id/tab1_main_row3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/tab1_main_button7"
+                    android:layout_width="30dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/img_btn_bg"
+                    android:src="@drawable/etc"
+                    android:scaleType="centerInside"
+                    android:padding="20dp"/>
+            </TableRow>
+        </TableLayout>
+        <Button
+            android:id="@+id/question_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="문의하기"
+            android:textSize="20dp"
+            android:textColor="#ff0000"
+            android:textStyle="bold"
+            android:background="@drawable/question_button"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!--애드몹 광고 AdView-->
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#333333"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-5865593614990239/9473016176">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+</LinearLayout>
