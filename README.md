@@ -19,3 +19,5 @@
 - 구현
 
 #### 산출물
+- 화면 흐름도
+<img width="1097" alt="스크린샷 2020-07-17 오후 4 01 36" src="https://user-images.githubusercontent.com/68316076/87758464-78044380-c847-11ea-9e92-7039cb1e89c7.png">
